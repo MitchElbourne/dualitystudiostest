@@ -14,6 +14,7 @@
                 <div class="card-header">
                     <h2 class="h4 card-title">{{$note->title}}</h2>
                     <div class="controls">
+                        <a href="{{url('/notes/edit/' . $note->id)}}" class="btn btn-warning"><i class="fa fa-pencil"></i></a>
                         <a href="{{url('/notes/delete/' . $note->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
                     </div>
                 </div>

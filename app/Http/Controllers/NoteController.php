@@ -15,7 +15,6 @@ class NoteController extends Controller
      */
     public function index()
     {
-        // Grabs all notes and shows the notes listing view
         $notes = Note::latest()->get();
 
         return view('notes', [
@@ -30,7 +29,6 @@ class NoteController extends Controller
      */
     public function create()
     {
-        // Shows the view to create a new resource
         return view('notes.create');
     }
 
@@ -42,7 +40,6 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        // Persist the new note/resource to the database and reroute to the home url
         request()->validate([
             'title' => 'required'
         ]);
@@ -63,7 +60,9 @@ class NoteController extends Controller
      */
     public function edit(Note $note)
     {
-        //
+        return view('notes.edit', [
+            'note'  => $note
+        ]);
     }
 
     /**
@@ -74,8 +73,22 @@ class NoteController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Note $note)
-    {
-        //
+    {   
+        // Validate the request data
+        request()->validate([
+            'title' => 'required'
+        ]);
+        // Find the note to update
+        $noteOld = Note::find($note->id);
+
+        // Replace the relevant fields
+        $noteOld->title = $request->title;
+        $noteOld->body = $request->body;
+        
+        // Persist back to the database
+        $noteOld->save();
+
+        return redirect('/');
     }
 
     /**

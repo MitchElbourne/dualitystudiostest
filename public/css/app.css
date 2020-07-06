@@ -62,21 +62,21 @@ body .container .card .card-header .controls a:first-of-type {
   margin-right: 0.5rem;
 }
 
-#create-note-form .input-wrapper {
+#note-form .input-wrapper {
   position: relative;
   margin-bottom: 2rem;
 }
 
-#create-note-form .input-wrapper input {
+#note-form .input-wrapper input {
   display: block;
 }
 
-#create-note-form .input-wrapper .error {
+#note-form .input-wrapper .error {
   color: red;
   position: absolute;
 }
 
-#create-note-form .input-wrapper textarea {
+#note-form .input-wrapper textarea {
   width: 100%;
 }
 
