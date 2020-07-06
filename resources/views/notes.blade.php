@@ -18,9 +18,11 @@
                         <a href="{{url('/notes/delete/' . $note->id)}}" class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
                     </div>
                 </div>
-                <div class="card-body">
-                    <p class="card-text">{!! $note->body !!}</p>
-                </div>
+                @if ($note->body != null)
+                    <div class="card-body">
+                        <p class="card-text">{!! $note->body !!}</p>
+                    </div>
+                @endif
             </div>
 
 
