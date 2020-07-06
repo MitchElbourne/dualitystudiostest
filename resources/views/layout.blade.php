@@ -11,13 +11,9 @@
 
     </head>
     <body>
-
-
-        <div class="flex-center position-ref full-height container">
-
-            <div class="content">
-                <h1>Notes</h1>
-            </div>{{-- content --}}
+        
+        <div class="container">
+            @yield('content')
         </div>
 
         <script src="/js/app.js"></script>
