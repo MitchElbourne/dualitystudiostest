@@ -21,6 +21,10 @@ html {
   outline: none !important;
 }
 
+body .container h1 {
+  margin: 2rem 0 0 0;
+}
+
 /*!
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors

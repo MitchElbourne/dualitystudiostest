@@ -28,7 +28,6 @@ html {
     outline: none !important;
 }
 
-// Import the bootstrap css
-@import 'bootstrap';
 // Custom styles importing
 @import './globals/style';
+@import './globals/vendor';
