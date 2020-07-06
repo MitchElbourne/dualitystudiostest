@@ -13,6 +13,7 @@
             @error('title')
                 <p class="error">{{$errors->first('title')}}</p>
             @enderror
+            
         </div>
         <div class="input-wrapper">
             <textarea name="body" cols="30" rows="10"></textarea>

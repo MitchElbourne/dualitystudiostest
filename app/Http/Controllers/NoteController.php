@@ -54,18 +54,7 @@ class NoteController extends Controller
 
         return redirect('/');
     }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Note  $note
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Note $note)
-    {
-        //
-    }
-
+    
     /**
      * Show the form for editing the specified resource.
      *

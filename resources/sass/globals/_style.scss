@@ -45,8 +45,17 @@ body {
 // Styling for the create note form
 #create-note-form {
     .input-wrapper {
+        position: relative;
+        margin-bottom: 2rem;
         input {
             display: block;
+        }
+        .error {
+            color: red;
+            position: absolute;
+        }
+        textarea {
+            width: 100%;
         }
     }
 }

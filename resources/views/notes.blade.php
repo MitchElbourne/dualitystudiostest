@@ -13,8 +13,7 @@
                 <div class="card-header">
                     <h2 class="h4 card-title">{{$note->title}}</h2>
                     <div class="controls">
-                        <a class="btn btn-warning"><i class="fa fa-edit"></i></a>
-                        <a class="btn btn-danger"><i class="fa fa-close"></i></a>
+                        <a class="btn btn-danger"><i class="fa fa-trash-o"></i></a>
                     </div>
                 </div>
                 <div class="card-body">
