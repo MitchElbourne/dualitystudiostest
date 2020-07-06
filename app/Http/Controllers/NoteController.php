@@ -19,7 +19,7 @@ class NoteController extends Controller
         return view('notes', [
             'notes' => $notes
         ]);
-    }
+    } 
 
     /**
      * Show the form for creating a new resource.
