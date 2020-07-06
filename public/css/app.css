@@ -21,14 +21,14 @@ html {
   outline: none !important;
 }
 
+body .container h1 {
+  margin: 2rem 0;
+}
+
 body .container .page-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-body .container .page-header h1 {
-  margin: 2rem 0;
 }
 
 body .container .page-header button {
@@ -46,9 +46,24 @@ body .container .card .card-header {
   align-items: center;
 }
 
-body .container .card .card-header .controls button {
+body .container .card .card-header .controls {
+  display: flex;
+}
+
+body .container .card .card-header .controls a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 3rem;
   height: 3rem;
+}
+
+body .container .card .card-header .controls a:first-of-type {
+  margin-right: 0.5rem;
+}
+
+#create-note-form .input-wrapper input {
+  display: block;
 }
 
 /*!

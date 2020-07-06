@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Note;
+
 use Illuminate\Http\Request;
 
 class NoteController extends Controller
@@ -14,6 +15,7 @@ class NoteController extends Controller
      */
     public function index()
     {
+        // Grabs all notes and shows the notes listing view
         $notes = Note::latest()->get();
 
         return view('notes', [
@@ -28,7 +30,8 @@ class NoteController extends Controller
      */
     public function create()
     {
-        //
+        // Shows the view to create a new resource
+        return view('notes.create');
     }
 
     /**
@@ -39,7 +42,20 @@ class NoteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // Persist the new note/resource to the database and reroute to the home url
+        dd(request());
+
+
+        request()->validate([
+            'title' => 'required'
+        ]);
+
+        Note::create([
+            'title' => request('title'),
+            'body'  => request('body')
+        ]);
+
+        return route('noteController@index');
     }
 
     /**

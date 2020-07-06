@@ -1,12 +1,12 @@
 body {
     .container {
+        h1 {    
+            margin: 2rem 0;
+        }
         .page-header {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            h1 {    
-                margin: 2rem 0;
-            }
             button {
                 display: inline-block;
                 height: 3rem;
@@ -22,9 +22,16 @@ body {
                 justify-content: space-between;
                 align-items: center;
                 .controls {
-                    button {
+                    display: flex;
+                    a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                         width: 3rem;
                         height: 3rem;
+                        &:first-of-type {
+                            margin-right: 0.5rem;
+                        }
                     }
                 }
             }
@@ -32,9 +39,14 @@ body {
 
             }
         }
+    }
+}
 
-
-
-
+// Styling for the create note form
+#create-note-form {
+    .input-wrapper {
+        input {
+            display: block;
+        }
     }
 }

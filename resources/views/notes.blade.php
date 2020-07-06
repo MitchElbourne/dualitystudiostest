@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="page-header">
-        <h1>Notes</h1>
-        <a class="btn btn-success" href="{{url('/create')}}">New Note</a>
+        <h1>Notes App</h1>
+        <a class="btn btn-success" href="{{url('/notes/create')}}">New Note</a>
     </div>
     @if ($notes != null)
         @foreach ($notes as $note)
