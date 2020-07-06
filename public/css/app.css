@@ -22,7 +22,11 @@ html {
 }
 
 body .container h1 {
-  margin: 2rem 0 0 0;
+  margin: 2rem 0;
+}
+
+body .container .card {
+  margin-bottom: 1rem;
 }
 
 /*!

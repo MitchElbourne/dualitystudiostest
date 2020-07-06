@@ -14,7 +14,11 @@ class NoteController extends Controller
      */
     public function index()
     {
-        //
+        $notes = Note::latest()->get();
+
+        return view('notes', [
+            'notes' => $notes
+        ]);
     }
 
     /**
