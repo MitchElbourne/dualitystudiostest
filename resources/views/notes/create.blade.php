@@ -5,7 +5,7 @@
         <h1>New Note</h1>
         <a class="btn btn-primary" href="{{url('/')}}">Back</a>
     </div>
-    <form method="POST" action="/notes" id="create-note-form">
+    <form method="POST" action="/notes" id="note-form">
         @csrf
         <div class="input-wrapper">
             <label for="title">Title</label>
@@ -17,7 +17,7 @@
 
         </div>
         <div class="input-wrapper">
-            <textarea name="body" cols="30" rows="10"></textarea>
+            <textarea name="body" id="note-textarea"></textarea>
         </div>
         
         <button class="btn btn-success" type="submit">Create!</button>

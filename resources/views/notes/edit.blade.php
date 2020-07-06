@@ -18,7 +18,7 @@
 
         </div>
         <div class="input-wrapper">
-            <textarea name="body" cols="30" rows="10" id="edit-note">{{$note->body}}</textarea>
+            <textarea name="body" id="note-textarea">{{$note->body}}</textarea>
         </div>
         
         <button class="btn btn-success" type="submit">Update</button>

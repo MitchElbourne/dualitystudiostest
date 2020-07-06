@@ -21,6 +21,9 @@ body {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                h2 {
+                    margin-bottom: 0;
+                }
                 .controls {
                     display: flex;
                     a {
@@ -35,9 +38,6 @@ body {
                     }
                 }
             }
-            .card-body {
-
-            }
         }
     }
 }
@@ -49,6 +49,10 @@ body {
         margin-bottom: 2rem;
         input {
             display: block;
+            width: 100%;
+            padding: 0.5rem;
+            font-size: 1.5rem;
+            border: 1px solid rgba(grey, 0.4);
         }
         .error {
             color: red;

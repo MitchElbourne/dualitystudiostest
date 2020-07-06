@@ -1,7 +1,7 @@
 require('./bootstrap');
 
 tinymce.init({
-    selector: 'textarea#edit-note',
-    width: 900,
-    height: 300
+    selector: 'textarea#note-textarea',
+    width: '100%',
+    height: 500
 });
