@@ -19,7 +19,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <p class="card-text">{{$note->body}}</p>
+                    <p class="card-text">{!! $note->body !!}</p>
                 </div>
             </div>
 

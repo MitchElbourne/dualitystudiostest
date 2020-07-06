@@ -19283,6 +19283,12 @@ module.exports = function(module) {
 
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
+tinymce.init({
+  selector: 'textarea#edit-note',
+  width: 900,
+  height: 300
+});
+
 /***/ }),
 
 /***/ "./resources/js/bootstrap.js":
