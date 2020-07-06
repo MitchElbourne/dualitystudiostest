@@ -15,4 +15,20 @@
 
 html {
     font-family: 'system';
+    font-size: 18px;
 }
+
+*,
+*:after,
+*:before {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    outline: none !important;
+}
+
+// Import the bootstrap css
+@import 'bootstrap';
+// Custom styles importing
+@import './globals/style';

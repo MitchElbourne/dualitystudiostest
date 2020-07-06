@@ -13,13 +13,13 @@
     <body>
 
 
-        <div class="flex-center position-ref full-height">
+        <div class="flex-center position-ref full-height container">
 
             <div class="content">
-                Yo
+                <h1>Notes</h1>
             </div>{{-- content --}}
         </div>
 
-
+        <script src="/js/app.js"></script>
     </body>
 </html>
