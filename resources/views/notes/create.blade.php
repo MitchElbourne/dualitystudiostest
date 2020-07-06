@@ -4,7 +4,7 @@
     <div class="header">
         <h1>New note</h1>
     </div>
-    <form action="POST" action="/notes" id="create-note-form">
+    <form method="POST" action="/notes" id="create-note-form">
         @csrf
         <div class="input-wrapper">
             <label for="title">Title</label>

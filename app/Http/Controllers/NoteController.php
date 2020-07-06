@@ -43,9 +43,6 @@ class NoteController extends Controller
     public function store(Request $request)
     {
         // Persist the new note/resource to the database and reroute to the home url
-        dd(request());
-
-
         request()->validate([
             'title' => 'required'
         ]);
@@ -55,7 +52,7 @@ class NoteController extends Controller
             'body'  => request('body')
         ]);
 
-        return route('noteController@index');
+        return redirect('/');
     }
 
     /**
