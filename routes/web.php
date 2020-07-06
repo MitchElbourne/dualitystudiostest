@@ -19,3 +19,4 @@ Route::get('/', 'NoteController@index');
 
 Route::post('/notes', 'NoteController@store');
 Route::get('/notes/create', 'NoteController@create');
+Route::get('/notes/delete/{note}', "NoteController@destroy");

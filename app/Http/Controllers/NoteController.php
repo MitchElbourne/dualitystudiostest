@@ -86,6 +86,9 @@ class NoteController extends Controller
      */
     public function destroy(Note $note)
     {
-        //
+        // Destroy the given note by the ID
+        Note::destroy($note->id);
+
+        return redirect('/');
     }
 }
