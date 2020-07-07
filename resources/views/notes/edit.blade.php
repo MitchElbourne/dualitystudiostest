@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="page-header">
-        <h1>New Note</h1>
+        <h1>Edit Note</h1>
         <a class="btn btn-primary" href="{{url('/')}}">Back</a>
     </div>
     <form method="POST" action="/notes/{{$note->id}}" id="note-form">
